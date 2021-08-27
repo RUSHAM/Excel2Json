@@ -54,7 +54,7 @@ export class EditorComponent implements OnInit {
       headers: {
         "content-type": "application/json; charset=utf-8"
       },
-      body: this.code,
+      body: JSON.stringify(this.code),
       method: "POST"
     }
 
